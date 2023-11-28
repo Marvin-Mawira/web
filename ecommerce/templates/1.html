@@ -1,0 +1,191 @@
+<h3>
+    MTEC COLLECTION
+  </h3>
+  <p class="custom_heading-text">
+    
+  </p>
+</div>
+</div>
+</div>
+<div class="carousel-item">
+<div class="client_container layout_padding2">
+<div class="client_img-box">
+  <img src="{% static 'images/c4 (2).jpg' %}" alt="" />
+</div>
+<div class="client_detail">
+  <h3>
+    EMANNUEL KORIR
+  </h3>
+  <p class="custom_heading-text">
+   
+
+  </p>
+</div>
+</div>
+</div>
+
+<div id="carouselExampleControls-2" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active">
+  <div class="client_container layout_padding2">
+    <div class="client_img-box">
+      <img src="{% static 'images/c4 (3).jpg' %}" alt="" />
+    </div>
+    <div class="client_detail">
+      <h3>
+        IVANSKY ODHIAMBO
+      </h3>
+      <p class="custom_heading-text">
+
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div id="carouselExampleControls-2" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="client_container layout_padding2">
+        <div class="client_img-box">
+          <img src="{% static 'images/c4 (3).jpg' %}" alt="" />
+        </div>
+        <div class="client_detail">
+          <h3>
+            KEVIN WERE
+          </h3>
+          <p class="custom_heading-text">
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="carouselExampleControls-2" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="client_container layout_padding2">
+            <div class="client_img-box">
+              <img src="{% static 'images/c4 (3).jpg' %}" alt="" />
+            </div>
+            <div class="client_detail">
+              <h3>
+                JOSEPH MWENDO
+              </h3>
+              <p class="custom_heading-text">
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <form action="">
+          <div class="contact_form-container">
+            <div>
+              <div>
+                <input type="text" placeholder="Name">
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number">
+              </div>
+              <div>
+                <input type="email" placeholder="Email">
+              </div>
+
+              <div class="mt-5">
+                <input type="text" placeholder="Message">
+              </div>
+              <div class="mt-5">
+                <button type="submit">
+                  send
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </form>
+
+
+
+
+       
+ DATABASES = {  
+          'default': {  
+              'ENGINE': 'django.db.backends.mysql',  
+              'NAME': 'ecommerce',  
+              'USER':'root',  
+              'PASSWORD':'',  
+              'HOST':'localhost',  
+              'PORT':'3306'  
+          }  
+      }  
+
+
+
+      DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'ecommerce',
+            'USER': 'root',
+            'PASSWORD': '',
+            'HOST': 'localhost',
+            'PORT': '3306',
+        }
+    }
+
+
+
+
+def contact(request):
+    if request.method == 'POST':
+        contact=ContactMessage()
+        name=request.POST.get("name")
+        phone_number=request.POST.get("phone_number")
+        email=request.POST.get("email")
+        message=request.POST.get("message")
+        contact.name=name
+        contact.phone_number=phone_number
+        contact.email=email
+        contact.message=message
+        contact.save()
+        return HttpResponse("<h1> Thank you for contacting us</h1>")
+    return render(request, 'contact.html') 
+
+
+
+
+    <!-- Add this to your existing HTML code in index.html -->
+{% block content %}
+{% if login_form %}
+  <div class="form-container">
+    <form action="{% url 'login' %}" method="post" class="login">
+      {% csrf_token %}
+      {{ login_form }}
+      <div class="field btn">
+        <div class="btn-layer"></div>
+        <input type="submit" value="Login">
+      </div>
+      <div class="signup-link">
+        Not a member? <a href="#" id="signup-link">Signup now</a>
+      </div>
+    </form>
+  </div>
+{% elif signup_form %}
+  <div class="form-container">
+    <form action="{% url 'signup' %}" method="post" class="signup">
+      {% csrf_token %}
+      {{ signup_form }}
+      <div class="field btn">
+        <div class="btn-layer"></div>
+        <input type="submit" value="Signup">
+      </div>
+    </form>
+  </div>
+{% endif %}
+{% endblock %}
+
+
+
+    

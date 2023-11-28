@@ -1,0 +1,584 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slider_item-box">
+              <div class="slider_item-container">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="slider_item-detail">
+                        <div>
+                          <h2>
+                            Welcome to <br />
+                            MTec Collections✨⚡⚡
+                          </h2>
+                          <p>
+                            MTec offers you best services aimed 
+                            at providing you with an environment 
+                            in which to grow and realize your full potential as well as the esteem and responsibility 
+                            with which being a client of MTec carries with it. Our location is a serene and quiet
+                            environment enables our clients to grow with the peace of mind required for success in their endeavours.
+                          </p>
+                          <div class="d-flex">
+                            <a href="{% url 'fruit' %}" class="text-uppercase custom_orange-btn mr-3">
+                              Shop Now
+                            </a>
+                            <a href="{% url 'contact' %}" class="text-uppercase custom_orange-btn mr-3">
+                                                            Contact Us
+                            </a> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="slider_img-box">
+                        <div>
+                          <img src="{% static 'images/slide-img.png' %}" alt="" class="" />
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider_item-box">
+              <div class="slider_item-container">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="slider_item-detail">
+                        <div>
+                          <h2>
+                            Welcome to <br />
+                            MTec Collections✨⚡⚡                            </h2>
+                          <p>
+                            MTec offers you best services aimed 
+                            at providing you with an environment 
+                            in which to grow and realize your full potential as well as the esteem and responsibility 
+                            with which being a client of MTec carries with it. Our location in a serene and quiet
+                            environment enables our clients to grow with the peace of mind required for success in their endeavours.
+                          </p>
+                          <div class="d-flex">
+                            <a href="{% url 'fruit' %}" class="text-uppercase custom_orange-btn mr-3">
+                              Shop Now
+                            </a>
+                            <a href="{% url 'contact' %}" class="text-uppercase custom_orange-btn mr-3">
+                              Contact Us
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="slider_img-box">
+                        <div>
+                          <img src="{% static 'images/1 (6).jpg' %}" alt="" class="" />
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider_item-box">
+              <div class="slider_item-container">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="slider_item-detail">
+                        <div>
+                          <h2>
+                            Welcome to <br />
+                            MTec Collections✨⚡⚡                            </h2>
+                          <p>
+                            MTec offers you best services aimed 
+                            at providing you with an environment 
+                            in which to grow and realize your full potential as well as the esteem and responsibility 
+                            with which being a client of MTec carries with it. Our location in a serene and quiet
+                            environment enables our clients to grow with the peace of mind required for success in their endeavours.
+                          </p>
+                          <div class="d-flex">
+                            <a href="{% url 'fruit' %}" class="text-uppercase custom_orange-btn mr-3">
+                              Shop Now
+                            </a>
+                            
+                            <a href="{% url 'contact' %}" class="text-uppercase custom_orange-btn mr-3">
+                              Contact Us
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="slider_img-box">
+                        <div>
+                          <img src="{% static 'images/f.jpeg' %}" alt="" class="" />
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="custom_carousel-control">
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- end slider section -->
+  </div>
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding ">
+    <div class="container">
+      <h2 class="custom_heading">Our Services</h2>
+      <p class="custom_heading-text">
+        Our core mandate is to play a leading role in the ensuring every clients are satisfied.
+      </p>
+      <div class=" layout_padding2">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'images/b.jpeg' %}" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Blender Recipe</h5>
+              <p class="card-text">
+                We are thrilled in ensuring you get the fresheshest produce of juice.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="{% static 'images/f.jpeg' %}" alt="Card image cap" class="" width="250px"  />
+            <div class="card-body">
+              <h5 class="card-title">Fresh Friuts</h5>
+              <p class="card-text">
+               We typically prepare sweet and fresh fruits with flavours,you have all it takes to join our shop.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="{% static 'images/d.jpeg' %}" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Fruits Delivery</h5>
+              <p class="card-text">
+                We are thrilled in ensuring you get the fresheshest produce delivered swiftly to your doorstep.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a href="" class="custom_dark-btn">
+          Read More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+    <!-- fruits section -->
+
+    <section class="fruit_section layout_padding-top">
+      <div class="container">
+        <h2 class="custom_heading">Fresh Fruits</h2>
+        <p class="custom_heading-text">
+          There are many variations of fruits we have for you
+        
+        </p>
+        <div class="row layout_padding2">
+          <div class="col-md-8">
+            <div class="fruit_detail-box">
+              <h3>
+                Best Fresh Apples
+              </h3>
+              <p class="mt-4 mb-5">
+                This nutritious fruit offers multiple health benefits. Apples may lower your chance of developing cancer, diabetes, and heart disease. Research says apples may also help you lose weight while improving your gut and brain health.
+              </p>
+              <div>
+                <a href="{% url 'product_detail' 1 %}" class="custom_dark-btn">
+                  Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <div class="fruit_img-box d-flex justify-content-center align-items-center">
+              <img src="{% static 'images/1 (3).jpg' %}" alt="" class="" width="250px" />
+            </div>
+          </div>
+        </div>
+        <div class="row layout_padding2">
+          <div class="col-md-8">
+            <div class="fruit_detail-box">
+              <h3>
+                Best Fresh Grapes
+              </h3>
+              <p class="mt-4 mb-5">
+                Grapes offer many health benefits, including lowering blood pressure, improving memory and mood, and protecting against infections. 
+              </p>
+              <div>
+                <a href="{% url 'product_detail' 2 %}" class="custom_dark-btn">
+                  Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <div class="fruit_img-box d-flex justify-content-center ">
+              <img src="{% static 'images/1 (6).jpg' %}" alt="" class="" width="250px" />
+            </div>
+          </div>
+        </div>
+        <div class="row layout_padding2-top layout_padding-bottom">
+          <div class="col-md-8">
+            <div class="fruit_detail-box">
+              <h3>
+                Best Fresh Bananas
+              </h3>
+              <p class="mt-4 mb-5">
+                Bananas contain essential nutrients that may enhance heart health, help manage blood pressure, and boost a person’s mood, among other benefits. While bananas can be good for health, there may be risks in some cases.
+              </p>
+              <div>
+                <a href="{% url 'product_detail' 3 %}" class="custom_dark-btn">
+                  Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <div class="fruit_img-box d-flex justify-content-center align-items-center">
+              <img src="{% static 'images/1 (4).jpg' %}" alt="" class="" width="250px" />
+            </div>
+          </div>
+        </div>
+        <div class="row layout_padding2-top layout_padding-bottom">
+          <div class="col-md-8">
+            <div class="fruit_detail-box">
+              <h3>
+                Best Fresh Watermelons
+              </h3>
+              <p class="mt-4 mb-5">
+                Watermelon contains several nutrients known to benefit heart health. One is lycopene, an antioxidant that may help improve cholesterol levels and blood pressure. The other is citrulline, an amino acid that may boost levels of nitric oxide, a substance known to relax blood vessels and lower blood pressure.            </p>
+              <div>
+                <a href="{% url 'product_detail' 4 %}" class="custom_dark-btn">
+                  Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <div class="fruit_img-box d-flex justify-content-center align-items-center">
+              <img src="{% static 'images/w.jpeg' %}" alt="" class="" width="250px" />
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  
+    <!-- end fruits section -->
+
+  <!-- tasty section -->
+  <section class="tasty_section">
+    <div class="container_fluid">
+      <h2>
+        Very tasty fruits
+      </h2>
+    </div>
+  </section>
+
+  <!-- end tasty section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <h2 class="custom_heading">TEAM MEMBERS</h2>
+      <p class="custom_heading-text">
+        Feel free to meet and interact with our best experts in all the fields of our shop.
+      </p>
+      <div>
+
+
+        <div id="carouselExampleControls-2" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="client_container layout_padding2">
+                <div class="client_img-box">
+                  <img src="{% static 'images/c4 (3).jpg' %}" alt="" />
+                </div>
+                <div class="client_detail">
+                  <h2>
+                    <i>Name:Marvin Mawira</i><br>
+                    <i>Regno:G127/1355/2021</i>
+                  </h2>
+                  <p class="custom_heading-text">
+                    Responsible in Purchasing stock and negotiate with vendors for profitability. 
+    Accountable to meet sales goals and profit plan.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="client_container layout_padding2">
+                <div class="client_img-box">
+                  <img src="{% static 'images/w2 (2).jpeg' %}" alt="" />
+                </div>
+                <div class="client_detail">
+                  <h2>
+                    <i>Name:Kelvin Were</i><br>
+                    <i>Regno:G127/1350/2021</i>
+                  </h2>
+                  <p class="custom_heading-text">
+                    Ensures Be transparent about the success of the juice bar and work with management and staff to create .
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="client_container layout_padding2">
+                <div class="client_img-box">
+                  <img src="{% static 'images/w3 (3).jpeg' %}" alt="" />
+                </div>
+                <div class="client_detail">
+                  <h2>
+                   
+                    <i>Name:Emmanue Korir</i><br>
+                    <i>Regno:G127/1384/2021</i>
+                  </h2>
+                  <p class="custom_heading-text">
+                    Responsible in Leading the juice bar staff with strong emphasis on customer service, 
+                    safety and regulatory compliance. Purchase stock, manage inventory, and negotiate with vendors for profitability. 
+                    Accountable to meet or exceed sales goals and profit plan. resolve conflicts.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          
+
+            <div class="carousel-item">
+              <div class="client_container layout_padding2">
+                <div class="client_img-box">
+                  <img src="{% static 'images/w1 (4).jpeg' %}" alt="" />
+                </div>
+                <div class="client_detail">
+                  <h2>
+                   
+                    <i>Name:Ivansky Odhiambo</i><br>
+                    <i>Regno:G126/1270/2021</i>
+                  </h2>
+                  <p class="custom_heading-text">
+                    Liaising with clients and addressed inquiries, appointment requests and billing questions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="client_container layout_padding2">
+                <div class="client_img-box">
+                  <img src="{% static 'images/w (1).jpeg' %}" alt="" />
+                </div>
+                <div class="client_detail">
+                  <h2>
+                    
+                    <i>Name:Joseph Mwendo</i><br>
+                    <i>Regno:G127/1370/2021</i>
+                  </h2>
+                  <p class="custom_heading-text">
+                    Evaluates suppliers by assessing quality, timeliness and compliance of deliveries to maintain tight cost controls and maximize business operational efficiency
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom_carousel-control">
+            <a class="carousel-control-prev" href="#carouselExampleControls-2" role="button" data-slide="prev">
+              <span class="" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls-2" role="button" data-slide="next">
+              <span class="" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- map section -->
+  <section class="map_section">
+    <div id="map" class="h-100 w-100 ">
+    </div>
+  </section>
+
+  <!-- end map section -->
+
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>
+           Other Fruits
+          </h5>
+          <ul>
+            <li>
+              Plums
+              
+            </li>
+            <li>
+              Pears
+            </li>
+            <li>
+              Peaches
+            </li>
+            <li>
+              Papayas
+            </li>
+            <li>
+              Cherries
+            </li>
+            <li>
+              Lemons
+            </li>
+            <li>
+              Grapefruits
+            </li>
+            <li>
+              
+              Blueberries
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>
+           Other Services
+          </h5>
+          <ul>
+            <li>
+              Retail outlet.
+            </li>
+            <li>
+              Street selling
+            </li>
+            <li>
+              fruit snacks
+            </li>
+            <li>
+              fruit delivery
+            </li>
+            <li>
+              fresh cocktail
+              
+            </li>
+            <li>
+              Selling to hotels
+            </li>
+            <li>
+              Farm stall Sales
+            </li>
+            <li>
+              
+              Selling to restaurants 
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>
+            Request for
+          </h5>
+          <ul>
+            <li>
+              Honey processing
+            </li>
+            <li>
+              Honey
+            </li>
+            <li>
+             jams
+            </li>
+            <li>
+              Party juices
+            </li>
+            <li>
+              Vegetables
+            </li>
+            <li>
+              Wedding flowers
+            </li>
+            <li>
+              Garden materials
+            </li>
+            <li>
+              Bakerly products
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <div class="social_container">
+            <h5>
+              Follow Us
+            </h5>
+            <div class="social-box">
+              <a href="https://www.facebook.com/">
+                <img src="{% static 'images/fb.png' %}" alt="">
+              </a>
+
+              <a href="https://twitter.com/home">
+                <img src="{% static 'images/twitter.png' %}" alt="">
+              </a>
+              <a href="https://ke.linkedin.com/">
+                <img src="{% static 'images/linkedin.png' %}" alt="">
+              </a>
+              <a href="https://www.instagram.com/">
+                <img src="{% static 'images/instagram.png' %}" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="subscribe_container">
+            <h5>
+              Subscribe Now
+            </h5>
+            <div class="form_container">
+              <form action="https://www.youtube.com/">
+                <input type="email">
+                <button type="submit" >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endblock main %}
